@@ -1,0 +1,166 @@
+[ 2013-11-25 23:21:59.7525 2948/7f3a0b9ad720 agents/Watchdog/Main.cpp:452 ]: Options: { 'analytics_log_user' => 'nobody', 'default_group' => 'root', 'default_python' => 'python', 'default_ruby' => '/usr/local/rvm/wrappers/ruby-1.9.2-p320/ruby', 'default_user' => 'root', 'log_level' => '0', 'max_instances_per_app' => '0', 'max_pool_size' => '6', 'passenger_root' => '/tmp/passenger-standalone.ma3toz/locations.ini', 'pool_idle_time' => '300', 'prestart_urls' => 'aHR0cDovLzAuMC4wLjA6MzAwMAA=', 'temp_dir' => '/tmp', 'union_station_gateway_address' => 'gateway.unionstationapp.com', 'union_station_gateway_port' => '443', 'user_switching' => 'false', 'web_server_pid' => '2941', 'web_server_type' => 'nginx', 'web_server_worker_gid' => '0', 'web_server_worker_uid' => '0' }
+[ 2013-11-25 23:21:59.9067 2951/7ff83081b720 agents/HelperAgent/Main.cpp:597 ]: PassengerHelperAgent online, listening at unix:/tmp/passenger.1.0.2941/generation-0/request
+[ 2013-11-25 23:22:00.0036 2956/7f7899a257e0 agents/LoggingAgent/Main.cpp:330 ]: PassengerLoggingAgent online, listening at unix:/tmp/passenger.1.0.2941/generation-0/logging
+[ 2013-11-25 23:22:00.0042 2948/7f3a0b9ad720 agents/Watchdog/Main.cpp:635 ]: All Phusion Passenger agents started!
+[ 2013-11-25 23:22:02.0713 2951/7ff830724700 Pool2/Spawner.h:738 ]: [App 2979 stdout] 
+[ 2013-11-25 23:22:04.3325 2951/7ff830724700 Pool2/SmartSpawner.h:301 ]: Preloader for /mnt/work/etl/xiaojiti started on PID 2979, listening on unix:/tmp/passenger.1.0.2941/generation-0/backends/preloader.2979
+[ 2013-11-25 23:22:05.1959 2951/7ff830691700 Pool2/Implementation.cpp:1182 ]: [App 3036 stdout] == LiveReload is waiting for a browser to connect
+[ 2013-11-25 23:26:03.3335 3551/7ffc502cd720 agents/Watchdog/Main.cpp:452 ]: Options: { 'analytics_log_user' => 'nobody', 'default_group' => 'webuser', 'default_python' => 'python', 'default_ruby' => '/usr/local/rvm/wrappers/ruby-1.9.2-p320/ruby', 'default_user' => 'webuser', 'log_level' => '0', 'max_instances_per_app' => '0', 'max_pool_size' => '6', 'passenger_root' => '/tmp/passenger-standalone.5vipru/locations.ini', 'pool_idle_time' => '300', 'prestart_urls' => 'aHR0cDovLzAuMC4wLjA6MzAwMAA=', 'temp_dir' => '/tmp', 'union_station_gateway_address' => 'gateway.unionstationapp.com', 'union_station_gateway_port' => '443', 'user_switching' => 'false', 'web_server_pid' => '3549', 'web_server_type' => 'nginx', 'web_server_worker_gid' => '502', 'web_server_worker_uid' => '501' }
+[ 2013-11-25 23:26:03.3412 3554/7ffeeb08c720 agents/HelperAgent/Main.cpp:597 ]: PassengerHelperAgent online, listening at unix:/tmp/passenger.1.0.3549/generation-0/request
+[ 2013-11-25 23:26:03.3477 3560/7f4e4665f7e0 agents/LoggingAgent/Main.cpp:330 ]: PassengerLoggingAgent online, listening at unix:/tmp/passenger.1.0.3549/generation-0/logging
+[ 2013-11-25 23:26:03.3482 3551/7ffc502cd720 agents/Watchdog/Main.cpp:635 ]: All Phusion Passenger agents started!
+/usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/helper-scripts/prespawn:105:in `initialize': Connection refused - connect(2) (Errno::ECONNREFUSED)
+	from /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/helper-scripts/prespawn:105:in `new'
+	from /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/helper-scripts/prespawn:105:in `connect'
+	from /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/helper-scripts/prespawn:86:in `socket'
+	from /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/helper-scripts/prespawn:90:in `head_request'
+	from /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/helper-scripts/prespawn:145:in `<main>'
+[ 2013-11-25 23:26:09.3154 3588/7f87648d8720 agents/Watchdog/Main.cpp:452 ]: Options: { 'analytics_log_user' => 'nobody', 'default_group' => 'webuser', 'default_python' => 'python', 'default_ruby' => '/usr/local/rvm/wrappers/ruby-1.9.2-p320/ruby', 'default_user' => 'webuser', 'log_level' => '0', 'max_instances_per_app' => '0', 'max_pool_size' => '6', 'passenger_root' => '/tmp/passenger-standalone.13lvqc4/locations.ini', 'pool_idle_time' => '300', 'prestart_urls' => 'aHR0cDovLzAuMC4wLjA6MzAwMAA=', 'temp_dir' => '/tmp', 'union_station_gateway_address' => 'gateway.unionstationapp.com', 'union_station_gateway_port' => '443', 'user_switching' => 'false', 'web_server_pid' => '3586', 'web_server_type' => 'nginx', 'web_server_worker_gid' => '502', 'web_server_worker_uid' => '501' }
+[ 2013-11-25 23:26:09.3246 3591/7feb1eeb3720 agents/HelperAgent/Main.cpp:597 ]: PassengerHelperAgent online, listening at unix:/tmp/passenger.1.0.3586/generation-0/request
+[ 2013-11-25 23:26:09.3306 3596/7fc8462347e0 agents/LoggingAgent/Main.cpp:330 ]: PassengerLoggingAgent online, listening at unix:/tmp/passenger.1.0.3586/generation-0/logging
+[ 2013-11-25 23:26:09.3311 3588/7f87648d8720 agents/Watchdog/Main.cpp:635 ]: All Phusion Passenger agents started!
+[ 2013-11-25 23:26:11.4648 3591/7feb1ed7b700 Pool2/Spawner.h:159 ]: [App 3630 stderr] /bin/bash: /root/.bash_profile: Permission denied
+[ 2013-11-25 23:26:11.4700 3591/7feb1edbc700 Pool2/Spawner.h:738 ]: [App 3630 stdout] 
+[ 2013-11-25 23:26:11.7124 3591/7feb1ed7b700 Pool2/Spawner.h:159 ]: [App 3630 stderr] *** Phusion Passenger: no passenger_native_support.so found for the current Ruby interpreter. Compiling one...
+[ 2013-11-25 23:26:11.7125 3591/7feb1ed7b700 Pool2/Spawner.h:151 ]: [App 3630 stderr] 
+[ 2013-11-25 23:26:11.7126 3591/7feb1ed7b700 Pool2/Spawner.h:159 ]: [App 3630 stderr] # mkdir -p /tmp/passenger-standalone.13lvqc4/locations.ini/buildout/ruby/ruby-1.9.2-x86_64-linux
+[ 2013-11-25 23:26:11.7127 3591/7feb1ed7b700 Pool2/Spawner.h:151 ]: [App 3630 stderr] 
+[ 2013-11-25 23:26:11.7133 3591/7feb1ed7b700 Pool2/Spawner.h:159 ]: [App 3630 stderr] Not a valid directory. Trying a different one...
+[ 2013-11-25 23:26:11.7133 3591/7feb1ed7b700 Pool2/Spawner.h:151 ]: [App 3630 stderr] 
+[ 2013-11-25 23:26:11.7134 3591/7feb1ed7b700 Pool2/Spawner.h:159 ]: [App 3630 stderr] -------------------------------
+[ 2013-11-25 23:26:11.7134 3591/7feb1ed7b700 Pool2/Spawner.h:151 ]: [App 3630 stderr] 
+[ 2013-11-25 23:26:11.7135 3591/7feb1ed7b700 Pool2/Spawner.h:159 ]: [App 3630 stderr] # mkdir -p /home/webuser/.passenger/native_support/4.0.10/ruby-1.9.2-x86_64-linux
+[ 2013-11-25 23:26:11.7136 3591/7feb1ed7b700 Pool2/Spawner.h:151 ]: [App 3630 stderr] 
+[ 2013-11-25 23:26:11.7140 3591/7feb1ed7b700 Pool2/Spawner.h:159 ]: [App 3630 stderr] # cd /home/webuser/.passenger/native_support/4.0.10/ruby-1.9.2-x86_64-linux
+[ 2013-11-25 23:26:11.7140 3591/7feb1ed7b700 Pool2/Spawner.h:151 ]: [App 3630 stderr] 
+[ 2013-11-25 23:26:11.7144 3591/7feb1ed7b700 Pool2/Spawner.h:159 ]: [App 3630 stderr] # /usr/local/rvm/wrappers/ruby-1.9.2-p320/ruby '/usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/ext/ruby/extconf.rb'
+[ 2013-11-25 23:26:11.7145 3591/7feb1ed7b700 Pool2/Spawner.h:151 ]: [App 3630 stderr] 
+[ 2013-11-25 23:26:11.9051 3591/7feb1edbc700 Pool2/Spawner.h:738 ]: [App 3630 stdout] checking for alloca.h... yes
+[ 2013-11-25 23:26:11.9711 3591/7feb1edbc700 Pool2/Spawner.h:738 ]: [App 3630 stdout] checking for ruby/io.h... yes
+[ 2013-11-25 23:26:11.9712 3591/7feb1edbc700 Pool2/Spawner.h:738 ]: [App 3630 stdout] creating Makefile
+[ 2013-11-25 23:26:11.9759 3591/7feb1ed7b700 Pool2/Spawner.h:159 ]: [App 3630 stderr] # make
+[ 2013-11-25 23:26:11.9795 3591/7feb1edbc700 Pool2/Spawner.h:738 ]: [App 3630 stdout] gcc -I. -I/usr/local/rvm/rubies/ruby-1.9.2-p320/include/ruby-1.9.1/x86_64-linux -I/usr/local/rvm/rubies/ruby-1.9.2-p320/include/ruby-1.9.1/ruby/backward -I/usr/local/rvm/rubies/ruby-1.9.2-p320/include/ruby-1.9.1 -I/usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/ext/ruby -DHAVE_ALLOCA_H -DHAVE_RUBY_IO_H    -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -g  -o passenger_native_support.o -c /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/ext/ruby/passenger_native_support.c
+[ 2013-11-25 23:26:12.1913 3591/7feb1edbc700 Pool2/Spawner.h:738 ]: [App 3630 stdout] gcc -shared -o passenger_native_support.so passenger_native_support.o -L. -L/usr/local/rvm/rubies/ruby-1.9.2-p320/lib -Wl,-R/usr/local/rvm/rubies/ruby-1.9.2-p320/lib -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/usr/local/rvm/rubies/ruby-1.9.2-p320/lib -L/usr/local/rvm/rubies/ruby-1.9.2-p320/lib -lruby   -lpthread
+[ 2013-11-25 23:26:12.2225 3591/7feb1ed7b700 Pool2/Spawner.h:159 ]: [App 3630 stderr] Compilation succesful.
+[ 2013-11-25 23:26:12.2226 3591/7feb1ed7b700 Pool2/Spawner.h:159 ]: [App 3630 stderr] -------------------------------
+[ 2013-11-25 23:26:12.6548 3591/7feb1edbc700 Pool2/Implementation.cpp:777 ]: Could not spawn process for group /mnt/work/etl/xiaojiti#default: An error occured while starting up the preloader.
+     in 'void Passenger::ApplicationPool2::SmartSpawner::handleErrorResponse(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:455)
+     in 'std::string Passenger::ApplicationPool2::SmartSpawner::negotiatePreloaderStartup(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:558)
+     in 'void Passenger::ApplicationPool2::SmartSpawner::startPreloader()' (SmartSpawner.h:206)
+     in 'virtual Passenger::ApplicationPool2::ProcessPtr Passenger::ApplicationPool2::SmartSpawner::spawn(const Passenger::ApplicationPool2::Options&)' (SmartSpawner.h:744)
+     in 'void Passenger::ApplicationPool2::Group::spawnThreadRealMain(const Passenger::ApplicationPool2::SpawnerPtr&, const Passenger::ApplicationPool2::Options&, unsigned int)' (Implementation.cpp:710)
+
+[ 2013-11-25 23:26:12.6550 3591/7feb0ffff700 agents/HelperAgent/RequestHandler.h:1892 ]: [Client 20] Cannot checkout session. An error occured while starting up the preloader.
+Error page:
+git://github.com/follmann/middleman-favicon-maker.git (at master) is not checked out. Please run `bundle install` (Bundler::GitError)
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/source/git.rb:177:in `rescue in load_spec_files'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/source/git.rb:175:in `load_spec_files'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/source/path.rb:86:in `local_specs'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/source/git.rb:150:in `specs'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/lazy_specification.rb:52:in `__materialize__'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/spec_set.rb:88:in `block in materialize'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+  /usr/local/rvm/rubies/ruby-1.9.2-p320/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:116:in `require'
+  /usr/local/rvm/rubies/ruby-1.9.2-p320/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:116:in `rescue in require'
+  /usr/local/rvm/rubies/ruby-1.9.2-p320/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:122:in `require'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/lib/phusion_passenger/loader_shared_helpers.rb:212:in `run_load_path_setup_code'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/helper-scripts/rack-preloader.rb:73:in `preload_app'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/helper-scripts/rack-preloader.rb:127:in `<module:App>'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/helper-scripts/rack-preloader.rb:6:in `<module:PhusionPassenger>'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/helper-scripts/rack-preloader.rb:5:in `<main>'
+
+[ 2013-11-25 23:26:50.0544 3741/7fd04a8b9720 agents/Watchdog/Main.cpp:452 ]: Options: { 'analytics_log_user' => 'nobody', 'default_group' => 'webuser', 'default_python' => 'python', 'default_ruby' => '/usr/local/rvm/wrappers/ruby-1.9.2-p320/ruby', 'default_user' => 'webuser', 'log_level' => '0', 'max_instances_per_app' => '0', 'max_pool_size' => '6', 'passenger_root' => '/tmp/passenger-standalone.1expkoh/locations.ini', 'pool_idle_time' => '300', 'prestart_urls' => 'aHR0cDovLzAuMC4wLjA6MzAwMAA=', 'temp_dir' => '/tmp', 'union_station_gateway_address' => 'gateway.unionstationapp.com', 'union_station_gateway_port' => '443', 'user_switching' => 'false', 'web_server_pid' => '3739', 'web_server_type' => 'nginx', 'web_server_worker_gid' => '502', 'web_server_worker_uid' => '501' }
+[ 2013-11-25 23:26:50.0613 3744/7f43a6ec6720 agents/HelperAgent/Main.cpp:597 ]: PassengerHelperAgent online, listening at unix:/tmp/passenger.1.0.3739/generation-0/request
+[ 2013-11-25 23:26:50.0674 3750/7f8a5bf257e0 agents/LoggingAgent/Main.cpp:330 ]: PassengerLoggingAgent online, listening at unix:/tmp/passenger.1.0.3739/generation-0/logging
+[ 2013-11-25 23:26:50.0678 3741/7fd04a8b9720 agents/Watchdog/Main.cpp:635 ]: All Phusion Passenger agents started!
+[ 2013-11-25 23:26:52.1933 3744/7f43a6d8e700 Pool2/Spawner.h:159 ]: [App 3770 stderr] /bin/bash: /root/.bash_profile: Permission denied
+[ 2013-11-25 23:26:52.1978 3744/7f43a6dcf700 Pool2/Spawner.h:738 ]: [App 3770 stdout] 
+[ 2013-11-25 23:26:52.8767 3744/7f43a6dcf700 Pool2/Implementation.cpp:777 ]: Could not spawn process for group /mnt/work/etl/xiaojiti#default: An error occured while starting up the preloader.
+     in 'void Passenger::ApplicationPool2::SmartSpawner::handleErrorResponse(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:455)
+     in 'std::string Passenger::ApplicationPool2::SmartSpawner::negotiatePreloaderStartup(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:558)
+     in 'void Passenger::ApplicationPool2::SmartSpawner::startPreloader()' (SmartSpawner.h:206)
+     in 'virtual Passenger::ApplicationPool2::ProcessPtr Passenger::ApplicationPool2::SmartSpawner::spawn(const Passenger::ApplicationPool2::Options&)' (SmartSpawner.h:744)
+     in 'void Passenger::ApplicationPool2::Group::spawnThreadRealMain(const Passenger::ApplicationPool2::SpawnerPtr&, const Passenger::ApplicationPool2::Options&, unsigned int)' (Implementation.cpp:710)
+
+[ 2013-11-25 23:26:52.8770 3744/7f438ffff700 agents/HelperAgent/RequestHandler.h:1892 ]: [Client 20] Cannot checkout session. An error occured while starting up the preloader.
+Error page:
+git://github.com/follmann/middleman-favicon-maker.git (at master) is not checked out. Please run `bundle install` (Bundler::GitError)
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/source/git.rb:177:in `rescue in load_spec_files'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/source/git.rb:175:in `load_spec_files'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/source/path.rb:86:in `local_specs'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/source/git.rb:150:in `specs'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/lazy_specification.rb:52:in `__materialize__'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/spec_set.rb:88:in `block in materialize'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+  /usr/local/rvm/rubies/ruby-1.9.2-p320/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:116:in `require'
+  /usr/local/rvm/rubies/ruby-1.9.2-p320/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:116:in `rescue in require'
+  /usr/local/rvm/rubies/ruby-1.9.2-p320/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:122:in `require'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/lib/phusion_passenger/loader_shared_helpers.rb:212:in `run_load_path_setup_code'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/helper-scripts/rack-preloader.rb:73:in `preload_app'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/helper-scripts/rack-preloader.rb:127:in `<module:App>'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/helper-scripts/rack-preloader.rb:6:in `<module:PhusionPassenger>'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/helper-scripts/rack-preloader.rb:5:in `<main>'
+
+[ 2013-11-25 23:29:06.2465 3998/7f7617ab2720 agents/Watchdog/Main.cpp:452 ]: Options: { 'analytics_log_user' => 'nobody', 'default_group' => 'webuser', 'default_python' => 'python', 'default_ruby' => '/usr/local/rvm/wrappers/ruby-1.9.2-p320/ruby', 'default_user' => 'webuser', 'log_level' => '0', 'max_instances_per_app' => '0', 'max_pool_size' => '6', 'passenger_root' => '/tmp/passenger-standalone.1pbifi7/locations.ini', 'pool_idle_time' => '300', 'prestart_urls' => 'aHR0cDovLzAuMC4wLjA6MzAwMAA=', 'temp_dir' => '/tmp', 'union_station_gateway_address' => 'gateway.unionstationapp.com', 'union_station_gateway_port' => '443', 'user_switching' => 'false', 'web_server_pid' => '3996', 'web_server_type' => 'nginx', 'web_server_worker_gid' => '502', 'web_server_worker_uid' => '501' }
+[ 2013-11-25 23:29:06.2541 4001/7f81fad3d720 agents/HelperAgent/Main.cpp:597 ]: PassengerHelperAgent online, listening at unix:/tmp/passenger.1.0.3996/generation-0/request
+[ 2013-11-25 23:29:06.2610 4007/7f6c1f13b7e0 agents/LoggingAgent/Main.cpp:330 ]: PassengerLoggingAgent online, listening at unix:/tmp/passenger.1.0.3996/generation-0/logging
+[ 2013-11-25 23:29:06.2615 3998/7f7617ab2720 agents/Watchdog/Main.cpp:635 ]: All Phusion Passenger agents started!
+[ 2013-11-25 23:29:08.3917 4001/7f81fac05700 Pool2/Spawner.h:159 ]: [App 4027 stderr] /bin/bash: /root/.bash_profile: Permission denied
+[ 2013-11-25 23:29:08.3966 4001/7f81fac46700 Pool2/Spawner.h:738 ]: [App 4027 stdout] 
+[ 2013-11-25 23:29:09.0965 4001/7f81fac46700 Pool2/Implementation.cpp:777 ]: Could not spawn process for group /mnt/work/etl/xiaojiti#default: An error occured while starting up the preloader.
+     in 'void Passenger::ApplicationPool2::SmartSpawner::handleErrorResponse(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:455)
+     in 'std::string Passenger::ApplicationPool2::SmartSpawner::negotiatePreloaderStartup(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:558)
+     in 'void Passenger::ApplicationPool2::SmartSpawner::startPreloader()' (SmartSpawner.h:206)
+     in 'virtual Passenger::ApplicationPool2::ProcessPtr Passenger::ApplicationPool2::SmartSpawner::spawn(const Passenger::ApplicationPool2::Options&)' (SmartSpawner.h:744)
+     in 'void Passenger::ApplicationPool2::Group::spawnThreadRealMain(const Passenger::ApplicationPool2::SpawnerPtr&, const Passenger::ApplicationPool2::Options&, unsigned int)' (Implementation.cpp:710)
+
+[ 2013-11-25 23:29:09.0968 4001/7f81dffff700 agents/HelperAgent/RequestHandler.h:1892 ]: [Client 20] Cannot checkout session. An error occured while starting up the preloader.
+Error page:
+git://github.com/follmann/middleman-favicon-maker.git (at master) is not checked out. Please run `bundle install` (Bundler::GitError)
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/source/git.rb:177:in `rescue in load_spec_files'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/source/git.rb:175:in `load_spec_files'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/source/path.rb:86:in `local_specs'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/source/git.rb:150:in `specs'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/lazy_specification.rb:52:in `__materialize__'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/spec_set.rb:88:in `block in materialize'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `map!'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/spec_set.rb:85:in `materialize'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/definition.rb:114:in `specs'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/definition.rb:159:in `specs_for'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/definition.rb:148:in `requested_specs'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/environment.rb:18:in `requested_specs'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/runtime.rb:13:in `setup'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler.rb:120:in `setup'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/bundler-1.3.5/lib/bundler/setup.rb:17:in `<top (required)>'
+  /usr/local/rvm/rubies/ruby-1.9.2-p320/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:116:in `require'
+  /usr/local/rvm/rubies/ruby-1.9.2-p320/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:116:in `rescue in require'
+  /usr/local/rvm/rubies/ruby-1.9.2-p320/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:122:in `require'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/lib/phusion_passenger/loader_shared_helpers.rb:212:in `run_load_path_setup_code'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/helper-scripts/rack-preloader.rb:73:in `preload_app'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/helper-scripts/rack-preloader.rb:127:in `<module:App>'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/helper-scripts/rack-preloader.rb:6:in `<module:PhusionPassenger>'
+  /usr/local/rvm/gems/ruby-1.9.2-p320/gems/passenger-4.0.10/helper-scripts/rack-preloader.rb:5:in `<main>'
+
+[ 2013-11-25 23:29:25.8401 4103/7f818f593720 agents/Watchdog/Main.cpp:452 ]: Options: { 'analytics_log_user' => 'nobody', 'default_group' => 'root', 'default_python' => 'python', 'default_ruby' => '/usr/local/rvm/wrappers/ruby-1.9.2-p320/ruby', 'default_user' => 'root', 'log_level' => '0', 'max_instances_per_app' => '0', 'max_pool_size' => '6', 'passenger_root' => '/tmp/passenger-standalone.i2ahjq/locations.ini', 'pool_idle_time' => '300', 'prestart_urls' => 'aHR0cDovLzAuMC4wLjA6MzAwMAA=', 'temp_dir' => '/tmp', 'union_station_gateway_address' => 'gateway.unionstationapp.com', 'union_station_gateway_port' => '443', 'user_switching' => 'false', 'web_server_pid' => '4101', 'web_server_type' => 'nginx', 'web_server_worker_gid' => '0', 'web_server_worker_uid' => '0' }
+[ 2013-11-25 23:29:25.8475 4106/7f6d1c0ba720 agents/HelperAgent/Main.cpp:597 ]: PassengerHelperAgent online, listening at unix:/tmp/passenger.1.0.4101/generation-0/request
+[ 2013-11-25 23:29:25.8535 4111/7f85e13a37e0 agents/LoggingAgent/Main.cpp:330 ]: PassengerLoggingAgent online, listening at unix:/tmp/passenger.1.0.4101/generation-0/logging
+[ 2013-11-25 23:29:25.8539 4103/7f818f593720 agents/Watchdog/Main.cpp:635 ]: All Phusion Passenger agents started!
+[ 2013-11-25 23:29:27.9872 4106/7f6d1bfc3700 Pool2/Spawner.h:738 ]: [App 4132 stdout] 
+[ 2013-11-25 23:29:30.1137 4106/7f6d1bfc3700 Pool2/SmartSpawner.h:301 ]: Preloader for /mnt/work/etl/xiaojiti started on PID 4132, listening on unix:/tmp/passenger.1.0.4101/generation-0/backends/preloader.4132
+[ 2013-11-25 23:29:30.9979 4106/7f6d1bf30700 Pool2/Implementation.cpp:1182 ]: [App 4179 stdout] == LiveReload is waiting for a browser to connect

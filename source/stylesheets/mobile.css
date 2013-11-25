@@ -1,0 +1,194 @@
+
+#mobile {
+}
+
+#desktop {
+display:none;
+}
+
+
+@charset "utf-8";
+
+body{
+margin: 0;
+min-width: 480px;
+padding: 0;
+background-color:#222;
+}
+
+p{
+margin: 0 0 20px 0;	
+}
+
+p, ul{
+font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+font-size:30px;
+font-weight:200;
+font-style:normal;
+text-shadow:0 -1px 1px #000;
+}
+
+img{
+border: 0;
+}
+
+h1, #pixels{
+font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+font-size-adjust:0.40;
+font-weight:700;
+font-style:normal;
+text-shadow:0 -1px 1px #000;
+}
+
+h2{
+font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+font-size:48px;
+font-weight: bold;
+font-style:bold;
+text-shadow:0 -1px 1px #000;
+}
+
+#header h1, #pixels{
+color: #48941A;
+}
+
+.float-left{
+float: left;	
+margin: 0 0 0 20px;
+}
+
+.float-right{
+float: right;
+margin: 0 20px 0 0;
+}
+
+.center{
+font-size: 2.5em;
+padding: 80px 0 0 0;
+text-align: center;
+}
+
+#nav{
+list-style: none;
+position: fixed;
+right: 25px;
+top:60px;
+}
+
+#nav li{
+margin: 0 0 15px 0;	
+}
+
+#header, #intro, #second{
+width: 100%;
+}
+
+#mintro{
+background:url(http://chrisconnolly.com//images/me-mobile-2013.jpg) no-repeat;
+color: white;
+height: 400px;
+margin: 0 auto;
+padding: 0;
+}
+
+#msecond{
+background:url(http://chrisconnolly.com//images/city-mobile-2013.jpg) no-repeat;
+color: white;
+height: 400px;
+margin: 0 auto;
+padding: 0;
+}
+
+
+#mthird{
+background: url(http://chrisconnolly.com//images/ui-mobile-2013.jpg) no-repeat;
+color: white;
+height: 400px;
+margin: 0 auto;
+padding: 0;
+}
+
+#mfourth{
+background: url(http://chrisconnolly.com//images/film-mobile-2013.jpg) no-repeat;
+color: white;
+height: 400px;
+margin: 0 auto;
+padding: 0;	
+}
+
+#mfifth{
+background: url(http://chrisconnolly.com//images/coffee-mobile-2013.jpg) no-repeat;
+color: white;
+height: 400px;
+margin: 0 auto;
+padding: 0;	
+}
+
+#mfoot{
+background-color:#222;
+margin: 0 auto;
+padding: 40px 0 0 0;
+color:#999;
+text-shadow:0 1px 1px #000;
+text-align:center;
+}
+
+#mfoot .story p {
+text-align: center;
+font-size:30px;
+letter-spacing: 0.5px;
+}
+
+
+#mfoot .story a {
+color:#FFF;
+font-weight:bold;
+letter-spacing: 0.5px;
+text-decoration: none;
+}
+
+#mfoot .story a:hover{
+color:#EFEFEF;
+text-decoration: underline;
+}
+
+
+.story{
+overflow: auto;
+width: 480px;
+}
+
+.story .float-left{
+padding: 25px 50px;
+position: relative;
+float:left;
+}
+
+.immaletyoufinish {
+margin:0 auto;
+font-size:24px
+font-weight:bold;
+text-align: left;
+padding:25px 0;
+font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+background-color:#FFF;
+color:#000;
+}
+
+.holder {
+width:480px;
+margin:0 auto;}
+
+.footerblock {
+border-top:1px solid #999;
+border-bottom:1px solid #000;
+font-size:36px;
+font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+}
+
+.footerblock a {
+color:#FFF;
+text-decoration: none;
+display:block;
+padding:40px 40px 40px 70px;
+}

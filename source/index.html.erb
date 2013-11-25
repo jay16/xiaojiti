@@ -1,0 +1,258 @@
+<title>xiaojiti</title>
+
+<%= stylesheet_link_tag "mobile.css", media: "all and (max-device-width: 480px) and (orientation:portrait)" %>
+<%= stylesheet_link_tag "mobile.css", media: "all and (max-device-width: 480px) and (orientation:landscape)" %>
+<%= stylesheet_link_tag "desktop.css", media: "all and (min-device-width: 1025px)" %>
+<%= javascript_include_tag  "jquery.min.js" %>
+<%= javascript_include_tag  "jquery.parallax-1.1.3.js" %>
+<%= javascript_include_tag  "jquery.localscroll-1.2.7-min.js" %>
+<%= javascript_include_tag  "jquery.scrollTo-1.4.2-min.js" %>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#nav').localScroll(800);
+		
+		//.parallax(xPosition, speedFactor, outerHeight) options:
+		//xPosition - Horizontal position of the element
+		//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+		//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+		$('#intro').parallax("50%", 0.1);
+		$('#second').parallax("50%", 0.1);
+		$('.bg').parallax("50%", 0.4);
+		$('#third').parallax("50%", 0.1);
+		$('#fourth').parallax("50%", 0.1);
+		$('#fifth').parallax("50%", 0.1);
+		$('#sixth').parallax("50%", 0.1);
+	
+	})
+	</script>
+
+
+    <div id="mobile">
+   
+
+		<div id="mintro">
+		
+			<div class="story">
+			
+			
+			<div class="bg" style="display:none;"></div>
+		    
+		    	<div class="float-left">
+		            <h2>Hi, 我是[小集体].</h2>
+		            <p>You can typically find me as @xiaojiti everywhere.</P>
+	
+	
+		        </div>
+		    </div> <!--.story-->
+		</div> <!--#intro-->
+		
+		
+		<div id="msecond">
+			<div class="story">
+			
+		    	<div class="float-left">
+		            <h2>I live in 上海.</h2>
+			        <p>It has great coffee and a terrible transit system.</p>
+		        </div>
+		
+		    </div> <!--.story-->
+		</div> <!--#second-->
+				
+		
+		<div id="mthird">
+			<div class="story">
+		    	<div class="float-left">
+		            <h2>I push pixels.</h2>
+		            <p>Currently helping to shape the next-generation of Instagram.</p>
+	
+		        </div>
+		    </div> <!--.story-->
+		</div> <!--#third-->
+		
+	
+	
+		<div id="mfourth">
+			<div class="story">
+		    	<div class="float-left">
+		        	<h2>I take lots of photos.</h2>
+		            <p>Film, digital & mobile.  All good.</p>
+		        </div>
+		    </div> <!--.story-->
+		</div> <!--#fourth-->	
+		
+		
+		
+		<div id="mfifth">
+			<div class="story">
+		    	<div class="float-left">
+		        	<h2>I drink lots of coffee.</h2>
+		            <p>A solid bourbon from time to time, too.</p>
+		        </div>
+		    </div> <!--.story-->
+		</div> <!--#fifth-->	
+		
+		
+		
+		<div class="footerblock">
+		<a href="mailto:jay_li@intfocus.com">Email</a> 
+		</div>
+
+		<div class="footerblock">
+		<a href="http://main.intfocus.com">FocusMail</a>
+		</div>
+
+		<div class="footerblock">
+		<a href="http://xsolife.com">SOLife</a> 
+		</div>
+    
+    </div><!-- end mobile -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="desktop">
+    
+    	<div class="bighold">
+    	    
+	    	<div class="nav2">
+	    	
+	    		<div class="navblocktop"><a href="#intro" title="Next Section"><img src="http://chrisconnolly.com/csharp.png" alt="csharp" width="315" height="183" /></a></div>
+	    		
+	    		<div class="navblockbot"><img src="http://chrisconnolly.com/csharpshadows.png" alt="csharpshadows" width="302" height="83" /></div>
+	    		
+	    	</div><!-- end nav2 -->
+	    	
+	    	
+	   	</div>
+
+			
+		<div id="intro">
+		
+			<div class="story">
+			
+			<div class="bg" style="display:none;"></div>
+		    
+		    </div> <!--.story-->
+		
+		</div> <!--#intro-->
+		
+		<div class="block">
+		
+			<h2>Hi, I'm [小集体].</h2>
+		    
+		    <p>You can typically find me as @xiaojiti everywhere.</P>
+		
+		</div> <!-- block -->
+		
+		
+		
+		
+		
+		
+		
+		<div id="second">
+
+			<div class="story">
+		
+		
+		    </div> <!--.story-->
+		</div> <!--#second-->
+		
+		
+				
+		<div class="block">
+		
+			<h2>I live in 上海.</h2>
+		    
+		    <p>It has great coffee and a terrible transit system.</P>
+		
+		</div> <!-- block -->
+		
+				
+		
+		<div id="third">
+			<div class="story">
+
+		    </div> <!--.story-->
+		</div> <!--#third-->
+		
+
+		<div class="block">
+		
+			<h2>I push pixels.</h2>
+		    
+		    <p>Currently helping to shape the next-generation of Instagram.</P>
+		
+		</div> <!-- block -->
+	
+	
+		<div id="fourth">
+			<div class="story">
+		    </div> <!--.story-->
+		</div> <!--#fourth-->	
+		
+
+
+		<div class="block">
+		
+			<h2>I take a lot of photos.</h2>
+		    
+		    <p>Film, digital & mobile.  S'all good.</P>
+		
+		</div> <!-- block -->
+
+		
+		<div id="fifth">
+			<div class="story">
+		    </div> <!--.story-->
+		</div> <!--#fifth-->	
+
+		<div class="block">
+		
+			<h2>I survive on coffee.</h2>
+		    
+		    <p>From time to time, bourbon is nice as well.</P>
+		
+		</div> <!-- block -->
+
+
+		<div class="blocklight">
+		
+			<h2>Email me.</h2>
+		    
+		    <p><a href="mailto:jay_li@intfocus.com">jay_li@intfocus.com</a></P>
+		
+		</div> <!-- block -->
+
+
+		<div class="blocklight">
+		
+			<h2>FocusMail.</h2>
+		    
+		    <p><a href="main.intfocus.com">FocusMail</a></P>
+		
+		</div> <!-- block -->
+
+
+		<div class="blocklight">
+		
+			<h2>SOLife.</h2>
+		    
+		    <p><a href="http://xsolife.com">SOLife</a></P>
+		
+		</div> <!-- block -->
+    
+    
+    
+    </div><!-- end 1000holder -->
+    
+    </div><!-- end desktop -->
+    
+    
