@@ -1,0 +1,30 @@
+%form{:role => "form", :action => @form_path, :method => "post"}
+  .form-group
+    %label{:for => "name"} 名称 / 上市日期
+    %br
+    %input#name.form-control{:placeholder => "name", :type => "text", :name => "product[name]", :value => "#{@product.name}", style: "width:60%;display:inline;"}
+    %input#market.form-control{:placeholder => "market", :type => "text", :name => "product[market]", :value => "#{@product.market || Time.now.strftime('%Y新品')}", style: "width:35%;display:inline;"}
+  .form-group
+    %label{:for => "from"} 产地
+    %input#from.form-control{:placeholder => "from", :type => "text", :name => "product[from]", :value => "#{@product.from}"}
+  .form-group
+    %label{:for => "price"} 价格 
+    %br
+    %input#price.form-control{:placeholder => "price", :type => "text", :name => "product[price]", :value => "#{@product.price}", style: "width:20%;display:inline;"}
+    %input#unit1.form-control{:placeholder => "price", :type => "text", :name => "product[unit1]", :value => "#{@product.unit1 || '元'}", style: "width:20%;display:inline;"}
+    &#47; 
+    %input#unit2.form-control{:placeholder => "price", :type => "text", :name => "product[unit2]", :value => "#{@product.unit2 || '盒'}", style: "width:20%;display:inline;"}
+  .form-group
+    %label{:for => "weight"} 净重
+    %br
+    %input#weight.form-control{:placeholder => "price", :type => "text", :name => "product[weight]", :value => "#{@product.weight}", style: "width:20%;display:inline;"}
+    &#47; 
+    %input#unit3.form-control{:placeholder => "price", :type => "text", :name => "product[unit3]", :value => "#{@product.unit3 || 'g'}", style: "width:20%;display:inline;"}
+  .form-group
+    %label{:for => "desc"} 描述
+    <textarea class="form-control" rows="3" name="product[desc]">#{@product.desc}</textarea>
+  .form-group
+    %label{:for => "blog"} 博客链接
+    %input#blog.form-control{:placeholder => "blog", :type => "text", :name => "product[blog]", :value => "#{@product.blog}"}
+  %button.btn.btn-default.btn-primary.right{:type => "submit"} 提交 
+  %a.btn.btn-default.right{:href => "/products"} 返回商品列表

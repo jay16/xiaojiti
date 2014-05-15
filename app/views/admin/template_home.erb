@@ -1,0 +1,141 @@
+    <%= javascript_include_tag "/js/home.js" %>
+    <!--******************** BrandStory Section ********************-->
+    <section id="brandstory" class="single-page scrollblock">
+      <div class="container">
+        <div class="align"><i class="icon-map" style="color: #1d3e10;"></i></div>
+        <h1 id="folio-headline">品牌故事</h1>
+        <div class="row">
+          <div class="span4">
+            <div class="mask2"> <a href="./images/brand1-ren.jpg" rel="prettyPhoto"><img src="./images/brand1-ren.jpg" alt=""></a> </div>
+            <div class="inside">
+              <hgroup>
+              </hgroup>
+              <div class="entry-content">
+                <p>从小学五年级开始喝茶，喝到现在有二十多年了，我还是不懂茶。因为“人在草木间”是茶，而茶是在天地间的。但是我真的爱喝茶，源于它带给我的一丝感悟。</p>
+              </div>
+            </div>
+            <!-- /.inside -->
+          </div>
+          <!-- /.span4 -->
+          <div class="span4">
+            <div class="mask2"> <a href="./images/brand2-zai.jpg" rel="prettyPhoto"><img src="./images/brand2-zai.jpg" alt=""></a> </div>
+            <div class="inside">
+              <hgroup>
+              </hgroup>
+              <div class="entry-content">
+                <p>我是一个漂泊的人，生在陕西，大学毕业后就东奔西跑，从宁夏跑到西安，从西安跑到上海，就是想发现更好的工作机会。我觉得自己一直在路上。</p>
+              </div>
+            </div>
+            <!-- /.inside -->
+          </div>
+          <!-- /.span4 -->
+          <div class="span4">
+            <div class="mask2"> <a href="./images/brand3-cao.jpg" rel="prettyPhoto"><img src="./images/brand3-cao.jpg" alt=""></a> </div>
+            <div class="inside">
+              <hgroup>
+              </hgroup>
+              <div class="entry-content">
+                <p>在路上，我刚开始总理解为是去发现不同的天地，后来，我才渐渐明白，不论到哪里，不过是远远地重新发现自己、丰富自己。然而，我也天天唱着凡人歌，面对自己的各种烦恼。</p>
+              </div>
+            </div>
+            <!-- /.inside -->
+          </div>
+          <!-- /.span4 -->
+        </div>
+        <!-- /.row -->
+        
+        <div class="row">
+          <div class="span4">
+            <div class="mask2"> <a href="./images/brand4-mu.jpg" rel="prettyPhoto"><img src="./images/brand4-mu.jpg" alt=""></a> </div>
+            <div class="inside">
+              <hgroup>
+              </hgroup>
+              <div class="entry-content">
+                <p>幸而有余。无论多么繁忙，无论心情多么糟糕，我每天都要抽出一会时间喝茶。随着茶水冲出来，我的心便会立刻安静。这份欣喜是喝茶带给我的。</p> 
+              </div>
+            </div>
+            <!-- /.inside -->
+          </div>
+          <!-- /.span4 -->
+          <div class="span4">
+            <div class="mask2"> <a href="./images/brand5-jian.jpg" rel="prettyPhoto"><img src="./images/brand5-jian.jpg" alt=""></a> </div>
+            <div class="inside">
+              <hgroup>
+              </hgroup>
+              <div class="entry-content">
+                <p>因为在茶的心境里，我们行走在天地间。于是“我喝茶”团队诞生了。凝聚在一起，发现更加适合自己的好茶，并把它们献给爱茶的你们，</p> 
+              </div>
+            </div>
+            <!-- /.inside -->
+          </div>
+          <!-- /.span4 -->
+          <div class="span4">
+            <div class="mask2"> <a href="./images/brand6-whc.jpg" rel="prettyPhoto"><img src="./images/brand6-whc.jpg" alt=""></a> </div>
+            <div class="inside">
+              <hgroup>
+              </hgroup>
+              <div class="entry-content">
+                <p>我们是一群爱喝茶的人。并相信，生活中最适合自己的茶就是最好的茶。我们致力于不断地发现好茶。生活很美，让我们一起去发现</p>
+              </div>
+            </div>
+            <!-- /.inside -->
+          </div>
+          <!-- /.span4 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <hr>
+    <!--******************** Testimonials Section ********************-->
+    <!--*
+    <section id="testimonials" class="single-page hidden-phone">
+      <div class="container">
+        <div class="row">
+          <div class="blockquote-wrapper">
+            <blockquote class="mega">
+              <div class="span4">
+                <p class="cite">我喝茶 &amp; 小伙伴:</p>
+              </div>
+              <div class="span10">
+                <p class="alignright">"我们是一群爱喝茶的人。我们无茶不欢。我们相信，生活中最适合自己的茶就是最好的茶。我们致力于不断地发现好茶。生活很美，让我们一起去发现。"</p>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    ****-->
+    <!--******************** News Section ********************-->
+    <section id="news" class="single-page scrollblock">
+      <div class="container">
+        <div class="align"><i class="icon-link" style="color: #1d3e10;"></i></div>
+        <h1>茶品推荐</h1>
+        <!-- Three columns -->
+        <!-- /.row -->
+        <% @products.each_slice(3) do |row| %>
+        <div class="row">
+          <% row.each do |product| %>
+          <article class="span4 post"> <img class="img-news" src="./images/products/<%= product.image %>" alt="">
+            <div class="inside">
+              <p class="post-date"><i class="icon-calendar"></i> <%= product.market.strip if product.market %></p>
+              <h2><%= product.name %></h2>
+              <div class="entry-content">
+                <p></p>
+                <p><%= product.from %> </br><%= "价格：#{product.price} #{product.unit1}／#{product.unit2}；   净重：#{product.weight.to_i}#{product.unit3}" %></p>
+                <p><%= product.desc %></p>
+                  <a class="hidden" href="<%= product.blog %>" class="more-link"><%= Settings.post.readmore %></a>
+                  <a href="/cart?product=<%= product.id %>" class="more-link" style="margin-top:0px;"><%= Settings.post.add_to_shopcart %></a>
+              </div>
+            </div>
+            <!-- /.inside -->
+          </article>
+          <!-- /.span4 -->
+          <% end %>
+        </div>
+        <% end %>
+      <!-- /.container -->
+    </section>
+
+   </hr> 

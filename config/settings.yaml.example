@@ -1,0 +1,30 @@
+default: &default
+  website:
+    title: "小集体"
+    subtitle: "小集体"
+    slogan: "你的生活玩伴"
+    favicon: "/images/favicon.ico"
+  alipay:
+    pid: '2088212078009126' # replace with your own
+    secret: 'gkvl7jzbnul33zxsr8zt0jem48o35tka'
+    seller_email: "wan@xiaojiti.com " # your alipay acount that you used to reigister the app
+    return_url: "http://store.xiaojiti.cn/transactions/done"
+    notify_url: "http://store.xiaojiti.cn/transactions/notify"
+  login:
+    name: "admin"
+    password: "123456"
+  post:
+    readmore: "详细阅读"
+    add_to_shopcart: "添加到购物车"
+  contact:
+    weixin: "sha-aichun"
+
+production:
+  <<: *default
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  default_password: ''

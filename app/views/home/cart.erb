@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>小集体 | 你的生活玩伴</title>
+    <meta charset='UTF-8' content='text/html' http-equiv='content-type'>
+    <link href='/images/favicon.ico' rel='shortcut icon'>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.3.0.3.js"></script>
+    <script src="/js/app.js"></script>
+    <link href="/css/bootstrap.min.3.0.3.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="/css/application.scss" media="screen, projection" rel="stylesheet" type="text/css">
+  </head>
+  <body style='background:#f0f0f0;'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-sm-12' style='text-align:center;'>
+          <div class='loading hidden'>加载中...</div>
+          
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-sm-10 col-sm-offset-1'>
+          <script src="/js/shop_cart.js"></script>
+          <h3>购物车 - 小集体</h3>
+          <a class='btn btn-default right' href='/home' style='margin-top:-40px;'>返回home</a>
+          <table class='table table-striped'>
+            <thead>
+              <tr>
+                <th style='width:120px'>图片</th>
+                <th>名称</th>
+                <th style='width:120px;'>价格</th>
+                <th style='width:120px;'>净重</th>
+                <th style='width:150px;'>数量</th>
+                <th style='width:50px;'>小计</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class='product' id='product_1'>
+                <td><image src="./images/products/baicha-400.png" style="width:120px;"></td>
+                <td>
+                  <span class='name'>茅家埠西湖龙井 <br>西湖龙井核心产区之茅家埠</span>
+                </td>
+                <td>
+                  <span class='price'>80.0</span>
+                   元/盒
+                </td>
+                <td>30.0g</td>
+                <td>
+                  <a class='minus btn btn-default btn-xs btn-primary' onclick="ShopCart.minus('product_1', 80.0);" style='border-radius: 3px 0px 0px 3px;'>
+                    <i class='glyphicon glyphicon-minus'></i>
+                  </a>
+                  <input class='form-control quantity' disabled='disabled' id='product_1_quantity' min='0' style='padding:0px;width:50px;display:inline;line-height:22px;height:22px;font-size:8px;border-radius: 0px;margin: auto -5px;text-align:center;' type='number' value='0'>
+                  <a class='plus btn btn-default btn-xs btn-primary' onclick="ShopCart.plus('product_1', 80.0);" style='border-radius: 0px 3px 3px 0px;'>
+                    <i class='glyphicon glyphicon-plus'></i>
+                  </a>
+                </td>
+                <td class='amount' id='product_1_amount'>0</td>
+              </tr>
+              <tr class='product' id='product_2'>
+                <td><image src="./images/products/biluochun-400.png" style="width:120px;"></td>
+                <td>
+                  <span class='name'>太湖西山碧螺春 <br>西山镇消夏湾茶园</span>
+                </td>
+                <td>
+                  <span class='price'>70.0</span>
+                   元/盒
+                </td>
+                <td>30.0g</td>
+                <td>
+                  <a class='minus btn btn-default btn-xs btn-primary' onclick="ShopCart.minus('product_2', 70.0);" style='border-radius: 3px 0px 0px 3px;'>
+                    <i class='glyphicon glyphicon-minus'></i>
+                  </a>
+                  <input class='form-control quantity' disabled='disabled' id='product_2_quantity' min='0' style='padding:0px;width:50px;display:inline;line-height:22px;height:22px;font-size:8px;border-radius: 0px;margin: auto -5px;text-align:center;' type='number' value='0'>
+                  <a class='plus btn btn-default btn-xs btn-primary' onclick="ShopCart.plus('product_2', 70.0);" style='border-radius: 0px 3px 3px 0px;'>
+                    <i class='glyphicon glyphicon-plus'></i>
+                  </a>
+                </td>
+                <td class='amount' id='product_2_amount'>0</td>
+              </tr>
+              <tr class='product' id='product_3'>
+                <td><image src="./images/products/longjing-400.png" style="width:120px;"></td>
+                <td>
+                  <span class='name'>安吉桂家场白茶 <br>天荒坪镇桂家场茶园</span>
+                </td>
+                <td>
+                  <span class='price'>90.0</span>
+                   元/盒
+                </td>
+                <td>30.0g</td>
+                <td>
+                  <a class='minus btn btn-default btn-xs btn-primary' onclick="ShopCart.minus('product_3', 90.0);" style='border-radius: 3px 0px 0px 3px;'>
+                    <i class='glyphicon glyphicon-minus'></i>
+                  </a>
+                  <input class='form-control quantity' disabled='disabled' id='product_3_quantity' min='0' style='padding:0px;width:50px;display:inline;line-height:22px;height:22px;font-size:8px;border-radius: 0px;margin: auto -5px;text-align:center;' type='number' value='0'>
+                  <a class='plus btn btn-default btn-xs btn-primary' onclick="ShopCart.plus('product_3', 90.0);" style='border-radius: 0px 3px 3px 0px;'>
+                    <i class='glyphicon glyphicon-plus'></i>
+                  </a>
+                </td>
+                <td class='amount' id='product_3_amount'>0</td>
+              </tr>
+              <tr class='success'>
+                <td></td>
+                <td></td>
+                <td colspan='2' style='text-align: right;vertical-align:middle;'>
+                  已选购
+                  <span class='total-quantity' style='font-size:18px;'>0</span>
+                  件商品
+                </td>
+                <td style='vertical-align:middle;'>
+                  合计￥
+                  <span class='total-amount' style='font-size:18px;'>0</span>
+                </td>
+                <td>
+                  <form accept-charset='UTF-8' action='/transactions/checkout' class='form-inline col-sm-12' method='post' role='form'>
+                    <input class='hidden' id='quantity' name='quantity' type='hidden' value='0'>
+                    <input class='hidden' id='amount' name='amount' type='hidden' value='0'>
+                    <input class='hidden' id='order' name='order' type='hidden' value='0'>
+                    <input class='btn btn-default btn-success' name='commit' type='submit' value='结账'>
+                  </form>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='row center'>
+        <div class='footer'>2014 &#169; xiaojiti.com</div>
+      </div>
+    </div>
+  </body>
+</html>
