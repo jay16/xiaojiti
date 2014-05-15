@@ -1,6 +1,6 @@
 require "rubygems"
 
-ENV["APP_NAME"] ||= "wohecha"
+ENV["APP_NAME"] ||= "xiaojiti_store"
 ENV["RACK_ENV"] ||= "development"
 
 begin
